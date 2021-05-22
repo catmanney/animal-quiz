@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <head>
+        <style>
+            li {
+                font-family: monospace;
+                white-space: pre;
+                font-size: 20px;
+            }
+            /*span {
+                color:red;
+            }*/
+        </style>
+        <!--Can alse use <pre> tag for whitespace-->
+    </head>
+
+    <input type="button" value="Cat Default" onclick="defaultCat()"/>
+    <input type="button" value="Cat Sad" onclick="sadCat()"/>
+    <input type="button" value="Hi Wave Cat" onclick="catHiWave()"/>
+    <input type="button" value="Bye Wave Cat" id="wave_button" onclick="catByeWave()" />
+    <input type="button" value="Wink Cat" id="wink_button" onclick="catWink()" />
+    <input type="button" value="Bored Cat" id="bored_button" onclick="catBored()"/>
+    <input type="button" value="Click Cat" id="click_button" onclick="catTap()"/>
+    <input type="button" value="Win Cat" id="win_button" onclick="catWin()" />
+    
+
+    <ol>
+        <li id="cat1" name="cat" onclick="catTap()">                   </li>
+        <li id="cat2" name="cat" onclick="catTap()">                   </li>
+        <li id="cat3" name="cat" onclick="catTap()">      |\ - /|      </li>
+        <li id="cat4" name="cat" onclick="catTap()">      | · · |      </li>
+        <li id="cat5" name="cat" onclick="catTap()">       (='=)       </li>
+        <li id="cat6" name="cat" onclick="catTap()">      /|   |\      </li>
+        <li id="cat7" name="cat" onclick="catTap()">     / /   \ \     </li>
+        <li id="cat8" name="cat" onclick="catTap()">      (") (")      </li>
+        <li id="cat9" name="cat" onclick="catTap()">                   </li>
+        <li id="cat0" name="cat" onclick="catTap()">                   </li>
+    </ol>
+
+    <input type="button" value="Fish Default" onclick="defaultFish()"/>
+    <input type="button" value="Fish Sad" onclick="sadFish()"/>
+    <input type="button" value="Hi Wave Fish" onclick="fishHiWave()"/>
+    <input type="button" value="Bye Wave Fish" id="wave_button" onclick="fishByeWave()" />
+    <input type="button" value="Wink Fish" id="wink_button" onclick="fishWink()" />
+    <input type="button" value="Bored Fish" id="bored_button" onclick="fishBored()"/>
+    <input type="button" value="Click Fish" id="click_button" onclick="fishTap()"/>
+    <input type="button" value="Win Fish" id="win_button" onclick="fishWin()"/>
+
+<ol>
+    <li id="fish1" onclick="fishTap()">                    </li>
+    <li id="fish2" onclick="fishTap()">                    </li>
+    <li id="fish3" onclick="fishTap()">         |\         </li>
+    <li id="fish4" onclick="fishTap()">     |\  |^^\       </li>
+    <li id="fish5" onclick="fishTap()">     |>\/ · · \     </li>
+    <li id="fish6" onclick="fishTap()">     |>/\     /     </li>
+    <li id="fish7" onclick="fishTap()">     |/  |-/ /      </li>
+    <li id="fish8" onclick="fishTap()">         |/         </li>
+    <li id="fish9" onclick="fishTap()">                    </li>
+    <li id="fish0" onclick="fishTap()">                    </li>
+</ol>
+
+<button onclick="displayQuiz()">start quiz</button>
+<div id="test"></div>
+<div id="radio_home"></div>
+<div id="feedback"></div>
+<br>
+
+<input type="button" value="Bird Default" onclick="defaultBird()"/>
+<input type="button" value="Bird Sad" onclick="sadBird()"/>
+<input type="button" value="Hi Wave Bird" onclick="birdHiWave()"/>
+<input type="button" value="Bye Wave Bird" id="wave_button" onclick="birdByeWave()" />
+<input type="button" value="Wink Bird" id="wink_button" onclick="birdWink()" />
+<input type="button" value="Bored Bird" id="bored_button" onclick="birdBored()"/>
+<input type="button" value="Click Bird" id="click_button" onclick="birdTap()"/>
+<input type="button" value="Win Bird" id="win_button" onclick="birdWin()"/>
+
+
+<ol>
+    <li id="bird1" onclick="birdTap()">                     </li>
+    <li id="bird2" onclick="birdTap()">                     </li>
+    <li id="bird3" onclick="birdTap()">        /\_/\        </li>
+    <li id="bird4" onclick="birdTap()">       ( · · )       </li>
+    <li id="bird5" onclick="birdTap()">      //  '  \\      </li>
+    <li id="bird6" onclick="birdTap()">     //\     /\\     </li>
+    <li id="bird7" onclick="birdTap()">     ///\   /\\\     </li>
+    <li id="bird8" onclick="birdTap()">         """         </li>
+    <li id="bird9" onclick="birdTap()">                     </li>
+    <li id="bird0" onclick="birdTap()">                     </li>
+</ol>
+
+<input type="button" value="Dog Default" onclick="defaultDog()"/>
+<input type="button" value="Dog Sad" onclick="sadDog()"/>
+<input type="button" value="Hi Wave Dog" onclick="dogHiWave()"/>
+<input type="button" value="Bye Wave Dog" id="wave_button" onclick="dogByeWave()" />
+<input type="button" value="Wink Dog" id="wink_button" onclick="dogWink()" />
+<input type="button" value="Bored Dog" id="bored_button" onclick="dogBored()"/>
+<input type="button" value="Click Dog" id="click_button" onclick="dogTap()"/>
+<input type="button" value="Win Dog" id="win_button" onclick="dogWin()"/>
+
+<ol>
+    <li id="dog1" onclick="dogTap()">                   </li>
+    <li id="dog2" onclick="dogTap()">                   </li>         
+    <li id="dog3" onclick="dogTap()">      /^\ - _      </li>
+    <li id="dog4" onclick="dogTap()">      \ · · \/     </li>
+    <li id="dog5" onclick="dogTap()">       \(*)/       </li>
+    <li id="dog6" onclick="dogTap()">       /   \       </li>
+    <li id="dog7" onclick="dogTap()">      / | | \      </li>
+    <li id="dog8" onclick="dogTap()">     (m)   (m)     </li>
+    <li id="dog9" onclick="dogTap()">                   </li>
+    <li id="dog0" onclick="dogTap()">                   </li>
+</ol>
+<p>Hello beta testers! This is the demo for my animated quiz. On this html page, you should find four animals and a "start quiz" button. Upon pressing that button, a 6-question vocabulary quiz should appear. The correct answer to each question is indicated with a star. This star will not be available in the final product.<br> 
+    <br>
+    Here are some things you might enjoy testing.<br>
+    -If you answer all 6 questions correctly, each of the four animals should have a unique, extended animation as a reward.<br>
+    -Under regular circumstances, a correct answer should produce a "wink" in each animal.<br>
+    -An incorrect answer should produce "bored" facial expression in each animal.<br>
+    -Pressing the submit button without selecting an option should produce a "please select option" message, but no animation. Doing so does not affect your final quiz score.<br>
+    <br>
+    Additional things to try<br>
+    -clicking each animal or their surrounding whitespace should produce a unique animation and message, (some animals like being clicked on, some don't).<br>
+    -There is a list of buttons above each animal corresponding to the animations I have implemented. This has made it much easier to debug, and hopefully will be useful to you. These buttons will not be available in the final product.<br>
+    <br>
+    Some problems I am currently working on<br>
+    -I am happy with the waves for cat and bird, but am a little unsure about the waves for fish and dog.<br>
+    -I would like each animal to "wave hello" upon the window open (when viewer first sees the page). Sometimes the page finishes loading before the user opens the window and sees the content, so this is a little tricky.<br>
+    -Similarly, I would like each animal to "wave goodbye", when the page is closed (in coordination with an "are you sure you want to leave?" message prompt).<br>
+    -I recognize that pressing the "start quiz" button after the test has begun produces additional unnecessary options. However, it seems pretty harmless to the functions. I will be working on this, as there are few conceptual issues I need to still work on. For our purposes, you may simply ignore it (unless you're a rebel).<br>
+    -The alphabet and font work great on my computer, but there are some issues when viewing on my iPhone. The most important is that when the owl is clicked and the "angry" animation starts, the "V" character is not displayed properly. This character is meant to respresent angry eyebrows, and does so quite well on my computer. However, it is very obviously an alphabetical character when viewed on my iPhone. I have spent a great deal of time trying to fix this without much progress.<br>
+    -I think some minor changes could be made to the bubbles in the "fish win" event.<br>
+    -I feel like I use " > < " as eyes a little too much?<br>
+    <br>
+    That's about it for notes. I love both positive and (respectfully expressed) negative feedback. Feel free to comment on aethetics, timing and format related observations. I would love to know how it displays on phone, computer, or any other device you have!<br>
+    Thank you for your time, I hope you are entertained!<br>
+    -Cat<br>
+    Update #1: (7:36 AM, 4/27/21): One of my beta testers has noted some concern about the size of the animations, so I have added a new line of CSS code to change the font size to "x-large." If this is too much, the "large" size might also be a good option. Note that I have only changed the animation size, not the quiz size.<br>
+    I also noticed an error in the function I called for one of the animations, so a minor change was warranted.<br>
+    Update #2: (8 AM, 4/28/21): Changed the sizing of the font from relative ("x-large"), to number of pixels (20px). Not totally happy with it. Not sure what to do. Taking a little break and working on other projects.<br>
+</p>
+
+<script src="final_quiz_js.js"></script>
+<script src="animal_onclick.js"></script>
+<!--
+
+-->
+</html>
